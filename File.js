@@ -36,7 +36,7 @@
     }
     
     try {
-      self.type = self.type || mime.lookup(self.name)
+      self.type = self.type || mime.getType(self.name)
     } catch {}
 
     if (!self.path) {
